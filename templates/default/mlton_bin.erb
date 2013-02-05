@@ -1,3 +1,3 @@
 #!/bin/bash
 
-/usr/bin/mlton -mlb-path-var 'SMACKAGE <%= @home %>.smackage/lib' "$@"
+/usr/bin/mlton -mlb-path-var 'SMACKAGE <%= File.join(@home,".smackage/lib") %>' "$@"
